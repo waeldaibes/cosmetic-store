@@ -1,0 +1,87 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <style>
+    /* Styling for Checkout Section */
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container {
+        max-width: 800px; /* Increase the max-width for a wider form */
+        width: 90%; /* Reduce the width to keep some space at the sides */
+        padding: 40px; /* Increase the padding for a bigger form */
+        margin: 20px; /* Increase the margin to keep some space from the edges */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #f9f9f9;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-container label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .form-container input {
+        width: 100%; /* Ensure input fields match the width of the form container */
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+    }
+
+    .form-container button[type="submit"] {
+        background-color: #ff6b81;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .form-container button[type="submit"]:hover {
+        background-color: #ff4757;
+    }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Checkout</h2>
+        <form action="checkout.php" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label for="location">Location:</label>
+            <input type="text" name="location" placeholder="Enter your location" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>

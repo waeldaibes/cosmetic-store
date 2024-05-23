@@ -1,0 +1,90 @@
+/* Cart section */
+.cart-section {
+    padding: 50px 0;
+}
+
+/* Cart items container */
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Cart item */
+.cart-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Cart item title */
+.cart-item-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Cart item price */
+.cart-item-price {
+    font-weight: bold;
+    color: #009688;
+    margin-bottom: 5px;
+}
+
+/* Cart item quantity */
+.cart-item-quantity {
+    color: #666;
+}
+
+/* Cart item actions */
+.cart-item-actions {
+    margin-top: 20px;
+}
+
+/* Edit button */
+.btn-edit {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #00796b;
+}
+
+/* Delete button */
+.btn-delete {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Checkout button */
+.checkout-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.checkout-btn .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn .btn:hover {
+    background-color: #00796b;
+}
